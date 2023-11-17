@@ -18,7 +18,7 @@ steam_login_url = 'https://store.steampowered.com/login/'
 
 # Initialize the browser
 chrome_options = Options()
-chrome_options.setBinary("/usr/bin/google-chrome");
+chrome_options.binary_location("/usr/bin/google-chrome");
 #chrome_options.add_argument("--headless")
 driver = webdriver.Chrome(options=chrome_options)
 wait = WebDriverWait(driver, 10)
