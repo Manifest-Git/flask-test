@@ -16,7 +16,6 @@ def checkLogin(username, password):
 
     print('username,pw: ' + username + ',' + password)
 
-    """
     # URL for Steam login
     steam_login_url = 'https://store.steampowered.com/login/'
 
@@ -65,10 +64,6 @@ def checkLogin(username, password):
 
     # Close the browser
     driver.quit()
-
-    """
-
-    return jsonify({'result': "true"})
 
 if __name__ == "__main__":
     app.run(debug=True, host='0.0.0.0', port=8989)
